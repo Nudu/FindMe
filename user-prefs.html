@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title data-trans="html-title">Place Keeper</title>
+</head>
+
+<body onload="init()">
+
+    <h1>User-prefs</h1>
+    <a href="./index.html">Index</a>
+    <br>
+    <a href="./map.html">Map</a>
+    <br>
+    <a href="./user-prefs.html">user-prefs</a>
+
+    <form>
+        Choose Your Favorite Color <input class="BGcolor" type="color" name="favcolor" value="#ff0000"><br>
+        When EXACTLY you was born? <input class="date" type="datetime-local"><br>
+        Email? <input class="email" type="email"><br>
+        Age? <input onchange="onAgeChange()" class="age" type="range" min="18" max="120"><span class="age-span">X</span>
+        <br><button class="submit">Submit!</button>
+    </form>
+
+    <span class="horoscope">X</span>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/placeService.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/utilService.js"></script>
+
+</body>
+
+</html>
